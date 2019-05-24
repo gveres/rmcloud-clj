@@ -6,7 +6,7 @@
             [cprop.source :refer [from-env]]))
 
 (defn get-token-from-dotfile []
- (let [config (load-config)] :merge [(from-env)]
+ (let [config (load-config :merge [(from-env)])]
   (subs
     (->>
       (slurp (str (:home config) "/.rmapi"))
