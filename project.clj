@@ -8,8 +8,10 @@
                  [stylefruits/gniazdo "1.1.1"]
                  [org.clojure/tools.logging "0.4.1"]
                  [cheshire "5.8.1"]
-                 [com.taoensso/sente "1.14.0-RC2"]]
-  :repl-options {:init-ns rmcloud-clj.core}
-  :profiles {:dev
-             {}})
+                 [mount "0.1.16"]
+                 [com.taoensso/sente "1.14.0-RC2"]
+                 [cprop "0.1.13"]]
+    :repl-options {:init-ns rmcloud-clj.core}
+    :profiles {:dev
+               {}})
 
